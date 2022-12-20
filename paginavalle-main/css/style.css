@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2? family= IBM+Plex+Sans+Condensed:wght@200 & display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* ul {
+  list-style: none;
+}
+* ul a {
+  text-decoration: none;
+}
+
+body {
+  font-size: 18px;
+}
+
+a {
+  color: rgb(228, 130, 18);
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px -1px 5px black;
+}
+
+header {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  background: url("../images/cabeza3.png"), url("../images/cabeza.jpg");
+  background-size: 800px, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header nav {
+  display: grid;
+  grid-template-columns: 140px 1fr;
+  background: rgba(0, 0, 0, 0.3);
+  padding: 5px 20px;
+  border-bottom: 0px solid rgba(0, 0, 0, 0.3);
+}
+header nav ul {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+header nav ul li {
+  margin-right: 20px;
+}
+header section {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  padding: 50px 20px;
+  -moz-column-gap: 80px;
+       column-gap: 80px;
+  background: rgba(0, 0, 0, 0.3);
+}
+header section blockquote {
+  color: white;
+  text-shadow: 1px 1px 1px black, 1px 1px 5px black, 1px -1px 5px black;
+}
+header section form {
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.3);
+}
+header section form input, header section form button {
+  width: 100%;
+  display: block;
+  margin-bottom: 20px;
+}
+header section form input {
+  padding: 10px;
+  width: calc(100% - 25px);
+}
+header section form button {
+  width: 100%;
+  font-size: 1.2em;
+  background: rgb(0, 179, 139);
+  padding: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+header section form a {
+  display: block;
+  text-align: center;
+}
+
+main {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  padding: 60px 80px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  row-gap: 60px;
+  -moz-column-gap: 40px;
+       column-gap: 40px;
+}
+
+footer {
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  background: rgb(107, 94, 94);
+  background-image: url("../images/piee1.png");
+  border-top: 3px solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: rgba(228, 99, 13, 0.984);
+  padding: 30px 20px 50px 20px;
+  font-weight: normal;
+}
+footer a {
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  font-weight: normal;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    background: white;
+  }
+  header {
+    background: url("../images/cabeza.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  header nav {
+    grid-template-columns: 0.6px 1fr;
+  }
+  header #logo {
+    display: none;
+  }
+  header section {
+    grid-template-columns: 1fr;
+  }
+  header section blockquote {
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+    padding: 20px 5px;
+  }
+  main section img {
+    display: none;
+  }
+  footer {
+    padding: 10px 5px 15px 5px;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 900px) {
+  body #logo3 {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
